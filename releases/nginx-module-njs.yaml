@@ -1,0 +1,17 @@
+package: nginx-module-njs
+
+essential:
+  - nginx_bins
+  - nginx-module-njs_copyright
+
+slices:
+  bins:
+    essential:
+      - libxml2_libs
+    contents:
+      /usr/lib/nginx/modules/ngx_http_js_module.so:
+      /usr/lib/nginx/modules/ngx_stream_js_module.so:
+
+  copyright:
+    contents:
+      /usr/share/doc/nginx-module-njs/copyright:

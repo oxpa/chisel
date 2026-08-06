@@ -1,0 +1,16 @@
+package: nginx-module-xslt
+
+essential:
+  - nginx_bins
+  - nginx-module-xslt_copyright
+
+slices:
+  bins:
+    essential:
+      - libxslt1.1_libs
+    contents:
+      /usr/lib/nginx/modules/ngx_http_xslt_filter_module.so:
+
+  copyright:
+    contents:
+      /usr/share/doc/nginx-module-xslt/copyright:

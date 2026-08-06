@@ -1,0 +1,14 @@
+package: nginx-module-otel
+
+essential:
+  - nginx_bins
+  - nginx-module-otel_copyright
+
+slices:
+  bins:
+    contents:
+      /usr/lib/nginx/modules/ngx_otel_module.so:
+
+  copyright:
+    contents:
+      /usr/share/doc/nginx-module-otel/copyright:

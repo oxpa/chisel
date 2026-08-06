@@ -1,0 +1,14 @@
+package: nginx-module-acme
+
+essential:
+  - nginx_bins
+  - nginx-module-acme_copyright
+
+slices:
+  bins:
+    contents:
+      /usr/lib/nginx/modules/ngx_http_acme_module.so:
+
+  copyright:
+    contents:
+      /usr/share/doc/nginx-module-acme/copyright:

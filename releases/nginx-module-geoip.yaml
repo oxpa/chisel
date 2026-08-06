@@ -1,0 +1,15 @@
+package: nginx-module-geoip
+
+essential:
+  - nginx_bins
+  - nginx-module-geoip_copyright
+
+slices:
+  bins:
+    contents:
+      /usr/lib/nginx/modules/ngx_http_geoip_module.so:
+      /usr/lib/nginx/modules/ngx_stream_geoip_module.so:
+
+  copyright:
+    contents:
+      /usr/share/doc/nginx-module-geoip/copyright:
